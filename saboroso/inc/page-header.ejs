@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+
+<%- include('./../inc/head') -%>
+	
+
+<body>
+
+	<div class="gtco-loader"></div>
+
+	<div id="page">
+
+		<%- include('./../inc/head-menu') -%>
+
+        <% if (typeof isHome === 'boolean' && isHome){ %>
+            <%- include('./../inc/header-index') -%>
+        <% } else { %>
+            <%- include('./../inc/headeer') -%>
+        <% } %>
+
+  
